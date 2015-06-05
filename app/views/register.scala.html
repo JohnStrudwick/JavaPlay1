@@ -1,0 +1,42 @@
+@(registerEntries: List[controllers.Application.RegisterEntry])
+
+@main("Welcome to Play") {
+<table id="entries" class="responsive">
+    <thead>
+    <tr>
+        <th>hash</th>
+        <th>
+            <span class="field-value"><a class="link_to_register" href="http://field.openregister.org/field/mot-test">mot-test</a></span>
+        </th>
+        <th>
+            <span class="field-value"><a class="link_to_register" href="http://field.openregister.org/field/vehicle">vehicle</a></span>
+        </th>
+        <th>
+            <span class="field-value"><a class="link_to_register" href="http://field.openregister.org/field/result">result</a></span>
+        </th>
+        <th>
+            <span class="field-value"><a class="link_to_register" href="http://field.openregister.org/field/fuel-type">fuel type</a></span>
+        </th>
+        <th></th>
+    </tr>
+    <tr></tr>
+    </thead>
+    <tbody>
+    @for(re <- registerEntries) {
+    <tr>
+        <td class="hash"><span class="field-value">@re.getHash()</span></td>
+        <td class="address"><span class="field-value">@re.getMot_test()</span></td>
+        <td class="address"><span class="field-value">@re.getVehicle()</span></td>
+        <td class="address"><span class="field-value">@re.getResult()</span></td>
+        <td class="address"><span class="field-value">@re.getFuel_type()</span></td>
+        <td class="view"><a href="http://mot-test.openregister.org/hash/@re.getHash()">View entry</a></td>
+        <td class="view"></td>
+    </tr>
+
+
+
+
+
+}
+
+}
