@@ -1,12 +1,13 @@
 package controllers;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import play.data.Form;
 import play.libs.F;
 import play.libs.ws.WSResponse;
 import play.mvc.*;
 import play.libs.ws.WS;
 
-
+import models.Person;
 
 import views.html.*;
 
@@ -22,6 +23,7 @@ public class Application extends Controller {
         private final String vehicle;
         private final String result;
         private final String fuel_type;
+        // added comment
 
         public RegisterEntry(String hash, String mot_test, String vehicle, String result, String fuel_type) {
             this.hash = hash;
@@ -51,6 +53,14 @@ public class Application extends Controller {
             return fuel_type;
         }
     }
+
+//        public static Result addPerson(){
+//
+//            Person person = Form.form(Person.class).bindFromRequest().get();
+//
+//            person.save();
+//            return redirect(routes.index());
+//        }
 
 //    public static class RegisterEntry {
 //
