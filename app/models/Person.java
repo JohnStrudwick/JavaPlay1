@@ -12,7 +12,6 @@ import javax.persistence.Id;
 // added a hotfix comment
 // Added a test comment for testBranch
 // testbranch 2
-// comment that will not be needed
 
 
 /**
