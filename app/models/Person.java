@@ -9,6 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 // Added a test comment for testBranch
+// testbranch 2
 
 /**
  * Created by johnstrudwick on 09/06/15.
