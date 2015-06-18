@@ -8,6 +8,7 @@ import play.mvc.Result;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+// added a hotfix comment
 
 /**
  * Created by johnstrudwick on 09/06/15.
