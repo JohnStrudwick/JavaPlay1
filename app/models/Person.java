@@ -8,6 +8,7 @@ import play.mvc.Result;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+// Added a test comment for testBranch
 
 /**
  * Created by johnstrudwick on 09/06/15.
